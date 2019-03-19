@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Калькулятор</string>
+    <string name="tab_name1">Конвертеры</string>
+    <string name="tab_name2">Обычный калькулятор</string>
+    <string name="tab_name3">Калькуляторы</string>
+
+    <string name="clear">C</string>
+    <string name="backspace">⌫</string>
+
+    <string-array name="length">
+        <item>Нанометр</item>
+        <item>Миллиметр</item>
+        <item>Сантиметр</item>
+        <item>Метр</item>
+        <item>Километр</item>
+        <item>Фут</item>
+        <item>Миля</item>
+    </string-array>
+
+    <string-array name="temperature">
+        <item>Цельсий</item>
+        <item>Фаренгейт</item>
+        <item>Кельвин</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>Миллиграм</item>
+        <item>Грамм</item>
+        <item>Киллограмм</item>
+        <item>Тонна</item>
+    </string-array>
+
+    <string-array name="numb">
+        <item>Десятичная</item>
+        <item>Двоичная</item>
+        <item>Восьмеричная</item>
+        <item>Шестнадцатиричная</item>
+    </string-array>
+
+
+</resources>

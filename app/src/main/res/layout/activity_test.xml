@@ -1,0 +1,109 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input2"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your number"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinConversionSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Calculate" />
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="Decimal"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textDecimal"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:width="0dip" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="Binary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textBinary"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:width="0dip"  />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="Octal"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textOctal"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:width="0dip"  />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="HexaDecimal"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textHexa"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:width="0dip"  />
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

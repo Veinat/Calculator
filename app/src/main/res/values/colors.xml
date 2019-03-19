@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="oper_text_color">#1DB7BD</color>
+    <color name="equl_text_color">#FFFFFF</color>
+    <color name="main_backg_color">#ffffff</color>
+    <color name="input_backg_color">#FFFFFF</color>
+    <color name="preload_color">#d4d4d2</color>
+    <color name="colorPrimary">#222327</color>
+    <color name="colorPrimaryDark">#525557</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorAsh">#bbb</color>
+    <color name="colorBg">#03A8FF</color>
+    <color name="preload">#222327</color>
+</resources>
