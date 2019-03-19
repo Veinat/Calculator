@@ -13,13 +13,13 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".PostfixCalc"></activity>
-        <activity android:name=".NumbConverter" />
-        <activity android:name=".WeightConverter" />
+        <activity android:name=".Converter.NumbConverter" />
+        <activity android:name=".Converter.WeightConverter" />
         <activity
-            android:name=".LengthConverter"
+            android:name=".Converter.LengthConverter"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TempConverter"
+            android:name=".Converter.TempConverter"
             android:screenOrientation="portrait" />
         <activity
             android:name=".PreloadActivity"

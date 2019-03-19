@@ -1,4 +1,4 @@
-package com.veinat.calculated;
+package com.veinat.calculated.Converter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,12 +10,14 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 
-public class LengthConverter extends AppCompatActivity implements View.OnClickListener {
+import com.veinat.calculated.R;
+
+public class WeightConverter extends AppCompatActivity implements View.OnClickListener {
 
     private EditText e1, e2;
     private Spinner s1, s2;
     private int count1 = 0;
-    private Converting.Length ca;
+    private Converting.Weight ca;
     private Button num0, num1, num2, num3, num4, num5, num6, num7, num8, num9, dot, backspace;
     private ImageButton equal;
     private Toolbar toolbar;
@@ -23,13 +25,13 @@ public class LengthConverter extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_length_converter);
+        setContentView(R.layout.activity_weight_converter);
 
         initializeButtons();
         setOnclick();
         e1.setRawInputType(InputType.TYPE_NULL);
         e2.setRawInputType(InputType.TYPE_NULL);
-        ca = new Converting.Length();
+        ca = new Converting.Weight();
 
         backspace = (Button)findViewById(R.id.backSpace);
 
@@ -59,7 +61,7 @@ public class LengthConverter extends AppCompatActivity implements View.OnClickLi
 
         toolbar = findViewById(R.id.toolbar_temp);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Конвертер Длины");
+        getSupportActionBar().setTitle("Конвертер Массы");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
@@ -178,47 +180,29 @@ public class LengthConverter extends AppCompatActivity implements View.OnClickLi
             switch (item1)
             {
                 case 0:
-                    temp=ca.NanoToMeter(value);
+                    temp=ca.MilliToKilo(value);
                     break;
                 case 1:
-                    temp=ca.MilliToMeter(value);
+                    temp=ca.GramToKilo(value);
                     break;
                 case 2:
-                    temp=ca.CentiToMeter(value);
-                    break;
-                case 3:
                     temp=value;
                     break;
-                case 4:
-                    temp=ca.KiloToMeter(value);
-                    break;
-                case 5:
-                    temp=ca.FootToMeter(value);
-                    break;
-                case 6:
-                    temp=ca.MileToMeter(value);
+                case 3:
+                    temp=ca.MetricTonnesToKilo(value);
                     break;
             }
 
             switch (item2)
             {
                 case 0:
-                    temp=ca.MeterToNano(temp);
+                    temp=ca.KiloToMilli(temp);
                     break;
                 case 1:
-                    temp=ca.MeterToMilli(temp);
+                    temp=ca.KiloToGram(temp);
                     break;
                 case 2:
-                    temp=ca.MeterToCenti(temp);
-                    break;
-                case 4:
-                    temp=ca.MeterToKilo(temp);
-                    break;
-                case 5:
-                    temp=ca.MeterToFoot(temp);
-                    break;
-                case 6:
-                    temp=ca.MeterToMile(temp);
+                    temp=ca.KiloToMetricTonnes(temp);
                     break;
             }
             return temp;

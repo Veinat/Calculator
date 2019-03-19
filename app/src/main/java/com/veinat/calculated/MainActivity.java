@@ -5,6 +5,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.veinat.calculated.Adapter.FragmentsAdapter;
+import com.veinat.calculated.Fragment.Fragment1_MenuConverter;
+import com.veinat.calculated.Fragment.Fragment2_StandardCalculator;
+import com.veinat.calculated.Fragment.Fragment3_MenuCalculator;
+
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {

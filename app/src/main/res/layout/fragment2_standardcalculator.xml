@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@color/preload"
-    tools:context="com.veinat.calculated.Fragment2_StandardCalculator"
+    tools:context="com.veinat.calculated.Fragment.Fragment2_StandardCalculator"
     tools:ignore="autofill, LabelFor, ButtonStyle, RtlCompat, HardCodedText, NestedWeights, ContentDescription">
 
 

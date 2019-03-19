@@ -1,4 +1,4 @@
-package com.veinat.calculated;
+package com.veinat.calculated.Calculator;
 
 public class Сalcs {
 

@@ -1,4 +1,4 @@
-package com.veinat.calculated;
+package com.veinat.calculated.Converter;
 
 
 import android.os.Bundle;
@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.veinat.calculated.R;
 
 public class NumbConverter extends AppCompatActivity implements View.OnClickListener {
     private Spinner spinConversionSelection;

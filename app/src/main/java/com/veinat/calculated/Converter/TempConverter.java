@@ -1,7 +1,5 @@
-package com.veinat.calculated;
+package com.veinat.calculated.Converter;
 
-import android.graphics.Color;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -11,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+
+import com.veinat.calculated.R;
 
 public class TempConverter extends AppCompatActivity implements View.OnClickListener {
 

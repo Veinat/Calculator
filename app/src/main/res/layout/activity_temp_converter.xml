@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/preload"
-    tools:context="com.veinat.calculated.Fragment1_MenuConverter"
+    tools:context="com.veinat.calculated.Fragment.Fragment1_MenuConverter"
     tools:ignore="autofill, LabelFor, ButtonStyle, RtlCompat, HardCodedText, NestedWeights, ContentDescription">
 
 <android.support.design.widget.AppBarLayout
