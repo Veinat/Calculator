@@ -28,7 +28,8 @@ public class Fragment2_StandardCalculator extends Fragment implements View.OnCli
     private TextView resulttext;
     private Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnbrs, btndel, btndiv, btndot, btnpm;
     private ImageButton btnplus, btnmin, btnmult, btneq;
-    private boolean stateError, isNumber, lastDot;
+    private boolean stateError, isNumber;
+    private int count1 = 0;
 
 
     public Fragment2_StandardCalculator() {
@@ -165,7 +166,7 @@ public class Fragment2_StandardCalculator extends Fragment implements View.OnCli
                     else
                         append("+");
                 isNumber = false;
-                lastDot = false;
+                count1 = 0;
                 break;
             case R.id.btnmin:
                 if (endsWithOperatore())
@@ -173,7 +174,7 @@ public class Fragment2_StandardCalculator extends Fragment implements View.OnCli
                 else
                     append("-");
                 isNumber = false;
-                lastDot = false;
+                count1 = 0;
                 break;
             case R.id.btnmult:
                 if (!isEmpty())
@@ -182,7 +183,7 @@ public class Fragment2_StandardCalculator extends Fragment implements View.OnCli
                     else
                         append("x");
                 isNumber = false;
-                lastDot = false;
+                count1 = 0;
                 break;
             case R.id.btndiv:
                 if (!isEmpty())
@@ -191,17 +192,12 @@ public class Fragment2_StandardCalculator extends Fragment implements View.OnCli
                     else
                         append("/");
                 isNumber = false;
-                lastDot = false;
+                count1 = 0;
                 break;
             case R.id.btndot:
-                if (isNumber  && !lastDot) {
+                if (count1 == 0) {
                     append(".");
-                    isNumber = false;
-                    lastDot = true;
-                } else if (isEmpty()) {
-                    append("0.");
-                    isNumber = false;
-                    lastDot = true;
+                    count1 = 1;
                 }
                 break;
             case R.id.btnbrs:
@@ -278,35 +274,24 @@ public class Fragment2_StandardCalculator extends Fragment implements View.OnCli
     }
 
     private void clear() {
-        lastDot = false;
         isNumber = false;
         stateError = false;
         inputtext.getText().clear();
+        count1 = 0;
     }
 
     private void append(String str) {
         this.inputtext.getText().append(str);
     }
 
-    private boolean dot() {
-        return inputtext.getText().toString().contains(".");
-    }
-
-    private boolean dotEnds(){
-        return inputtext.getText().toString().endsWith(".");
-    }
-
     private void delete() {
         if (!isEmpty()) {
-            this.inputtext.getText().delete(getinput().length() - 1, getinput().length());
-            if(!dot()){
-                lastDot = false;
-            }
-
-            if (!dotEnds()){
-                lastDot = false;
-            }
-        } else clear();
+            String text = inputtext.getText().toString();
+            if (text.endsWith("."))
+                count1 = 0;
+            String newText = text.substring(0, text.length() - 1);
+            inputtext.setText(newText);
+        }
     }
 
     private String getinput() {

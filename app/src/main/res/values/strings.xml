@@ -37,5 +37,7 @@
         <item>Шестнадцатиричная</item>
     </string-array>
 
-
+    <string name="sqroot">\u221a</string>
+    <string name="cube">x\u00b3</string>
+    <string name="square">x\u00b2</string>
 </resources>

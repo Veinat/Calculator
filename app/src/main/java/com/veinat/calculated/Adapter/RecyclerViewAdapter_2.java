@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.veinat.calculated.PostfixCalc;
 import com.veinat.calculated.R;
 import com.veinat.calculated.Calculator.Сalcs;
+import com.veinat.calculated.ScientificCalculator;
 
 import java.util.List;
 
@@ -44,6 +45,9 @@ public class RecyclerViewAdapter_2 extends RecyclerView.Adapter<RecyclerViewAdap
             @Override
             public void onClick(View v) {
                 switch (calc.getId()){
+                    case 0:
+                        context.startActivity(new Intent(context, ScientificCalculator.class));
+                        break;
                     case 1:
                         context.startActivity(new Intent(context, PostfixCalc.class));
                         break;
