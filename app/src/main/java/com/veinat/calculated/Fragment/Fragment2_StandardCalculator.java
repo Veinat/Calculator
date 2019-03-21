@@ -47,7 +47,6 @@ public class Fragment2_StandardCalculator extends Fragment implements View.OnCli
 
         initializeButtons();
         setOnclick();
-        inputtext.setRawInputType(InputType.TYPE_NULL);
         inputtext.addTextChangedListener(textWatcher);
 
         btndel = (Button)getView().findViewById(R.id.btndel);

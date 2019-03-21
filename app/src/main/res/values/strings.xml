@@ -2,7 +2,7 @@
     <string name="app_name">Калькулятор</string>
     <string name="tab_name1">Конвертеры</string>
     <string name="tab_name2">Обычный калькулятор</string>
-    <string name="tab_name3">Калькуляторы</string>
+    <string name="tab_name3">Инженерный калькулятор</string>
 
     <string name="clear">C</string>
     <string name="backspace">⌫</string>

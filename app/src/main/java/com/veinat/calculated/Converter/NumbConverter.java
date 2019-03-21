@@ -20,6 +20,7 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
     private int spinPosition;
     private EditText dec, bin, oct, hex;
     private TextView input, binary, decimal, octal, hexa;
+    private View linedec, linebin, lineoct, linehex;
     private Button num0, num1, num2, num3, num4, num5, num6, num7, num8, num9, numa, numb, numc, numd, nume, numf, backspace;
     private ImageButton calculate;
     private Toolbar toolbar;
@@ -81,6 +82,10 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
         });
 
         input = (TextView) findViewById(R.id.input2);
+        linedec = (View) findViewById(R.id.linedec);
+        linebin = (View) findViewById(R.id.linebin);
+        lineoct = (View) findViewById(R.id.lineoct);
+        linehex = (View) findViewById(R.id.linehex);
         dec = (EditText) findViewById(R.id.viewDecimal);
         bin = (EditText) findViewById(R.id.viewBinary);
         oct = (EditText) findViewById(R.id.viewOctal);
@@ -144,6 +149,10 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
                         bin.setVisibility(View.VISIBLE);
                         oct.setVisibility(View.VISIBLE);
                         hex.setVisibility(View.VISIBLE);
+                        linedec.setVisibility(View.GONE);
+                        linebin.setVisibility(View.VISIBLE);
+                        lineoct.setVisibility(View.VISIBLE);
+                        linehex.setVisibility(View.VISIBLE);
                         decimal.setVisibility(View.GONE);
                         binary.setVisibility(View.VISIBLE);
                         octal.setVisibility(View.VISIBLE);
@@ -188,6 +197,10 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
                         bin.setVisibility(View.GONE);
                         oct.setVisibility(View.VISIBLE);
                         hex.setVisibility(View.VISIBLE);
+                        linedec.setVisibility(View.VISIBLE);
+                        linebin.setVisibility(View.GONE);
+                        lineoct.setVisibility(View.VISIBLE);
+                        linehex.setVisibility(View.VISIBLE);
                         decimal.setVisibility(View.VISIBLE);
                         binary.setVisibility(View.GONE);
                         octal.setVisibility(View.VISIBLE);
@@ -232,6 +245,10 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
                         bin.setVisibility(View.VISIBLE);
                         oct.setVisibility(View.GONE);
                         hex.setVisibility(View.VISIBLE);
+                        linedec.setVisibility(View.VISIBLE);
+                        linebin.setVisibility(View.VISIBLE);
+                        lineoct.setVisibility(View.GONE);
+                        linehex.setVisibility(View.VISIBLE);
                         decimal.setVisibility(View.VISIBLE);
                         binary.setVisibility(View.VISIBLE);
                         octal.setVisibility(View.GONE);
@@ -276,6 +293,10 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
                         bin.setVisibility(View.VISIBLE);
                         oct.setVisibility(View.VISIBLE);
                         hex.setVisibility(View.GONE);
+                        linedec.setVisibility(View.VISIBLE);
+                        linebin.setVisibility(View.VISIBLE);
+                        lineoct.setVisibility(View.VISIBLE);
+                        linehex.setVisibility(View.GONE);
                         decimal.setVisibility(View.VISIBLE);
                         binary.setVisibility(View.VISIBLE);
                         octal.setVisibility(View.VISIBLE);

@@ -59,12 +59,19 @@
                 />
         </LinearLayout>
 
+        <View
+            android:id="@+id/linedec"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/text"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <EditText
+                android:cursorVisible="false"
                 android:id="@+id/viewDecimal"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -79,6 +86,7 @@
             <EditText
                 android:focusable="false"
                 android:focusableInTouchMode="false"
+                android:cursorVisible="false"
                 android:id="@+id/textDecimal"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -89,11 +97,19 @@
                 android:gravity="center_vertical"
                 android:textSize="16sp"/>
         </LinearLayout>
+
+        <View
+            android:id="@+id/linebin"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/text"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <EditText
+                android:cursorVisible="false"
                 android:id="@+id/viewBinary"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -106,6 +122,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"/>
             <EditText
+                android:cursorVisible="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:id="@+id/textBinary"
@@ -118,11 +135,19 @@
                 android:gravity="center_vertical"
                 android:textSize="16sp"/>
         </LinearLayout>
+
+        <View
+            android:id="@+id/lineoct"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/text"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <EditText
+                android:cursorVisible="false"
                 android:id="@+id/viewOctal"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -135,6 +160,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"/>
             <EditText
+                android:cursorVisible="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:id="@+id/textOctal"
@@ -147,11 +173,19 @@
                 android:gravity="center_vertical"
                 android:textSize="16sp"/>
         </LinearLayout>
+
+        <View
+            android:id="@+id/linehex"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/text"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <EditText
+                android:cursorVisible="false"
                 android:id="@+id/viewHexa"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -164,6 +198,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"/>
         <EditText
+            android:cursorVisible="false"
             android:focusable="false"
             android:focusableInTouchMode="false"
             android:id="@+id/textHexa"

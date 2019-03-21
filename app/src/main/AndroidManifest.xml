@@ -12,11 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ScientificCalculator"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".PostfixCalc"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".Converter.NumbConverter"
             android:screenOrientation="portrait" />

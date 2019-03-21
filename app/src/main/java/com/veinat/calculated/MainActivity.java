@@ -8,7 +8,7 @@ import android.os.Bundle;
 import com.veinat.calculated.Adapter.FragmentsAdapter;
 import com.veinat.calculated.Fragment.Fragment1_MenuConverter;
 import com.veinat.calculated.Fragment.Fragment2_StandardCalculator;
-import com.veinat.calculated.Fragment.Fragment3_MenuCalculator;
+import com.veinat.calculated.Fragment.Fragment3_ScientificCalculator;
 
 import java.util.Objects;
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 tabs.getTabCount(),
                 new Fragment1_MenuConverter(),
                 new Fragment2_StandardCalculator(),
-                new Fragment3_MenuCalculator());
+                new Fragment3_ScientificCalculator());
 
         pager.setAdapter(adapter);
         pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabs));
