@@ -160,14 +160,20 @@ public class LengthConverter extends AppCompatActivity implements View.OnClickLi
                 break;
 
             case R.id.equal:
-                int item1 = s1.getSelectedItemPosition();
-                int item2 = s2.getSelectedItemPosition();
-                double value1 = Double.parseDouble(e1.getText().toString());
-                double result = evaluate(item1, item2, value1);
-                e2.setText(result + "");
+                if (!isEmpty()) {
+                    int item1 = s1.getSelectedItemPosition();
+                    int item2 = s2.getSelectedItemPosition();
+                    double value1 = Double.parseDouble(e1.getText().toString());
+                    double result = evaluate(item1, item2, value1);
+                    e2.setText(result + "");
+                }
 
                 break;
         }
+    }
+
+    private boolean isEmpty() {
+        return this.e1.getText().toString().isEmpty();
     }
 
     public double evaluate(int item1,int item2,double value)

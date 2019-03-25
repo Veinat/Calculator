@@ -421,7 +421,9 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
                 break;
 
             case R.id.calculate:
+                if (!isEmpty()) {
                 calculation();
+                }
                 break;
         }
     }
@@ -440,7 +442,7 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
     private void calculateDecimal() {
         String value = input.getText().toString();
 
-        if (!checkingInputValidation()) {
+        if (!isEmpty()) {
             switch (spinPosition) {
                 case 0:
                     try {
@@ -480,7 +482,7 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
     private void calculateBinary() {
         String value = input.getText().toString();
 
-        if (!checkingInputValidation()) {
+        if (!isEmpty()) {
             switch (spinPosition) {
                 case 0:
                     try {
@@ -517,7 +519,7 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
     private void calculateOctal() {
         String value = input.getText().toString();
 
-        if (!checkingInputValidation()) {
+        if (!isEmpty()) {
             switch (spinPosition) {
                 case 0:
                     try {
@@ -558,7 +560,7 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
     private void calculateHexa() {
         String value = input.getText().toString();
 
-        if (!checkingInputValidation()) {
+        if (!isEmpty()) {
             switch (spinPosition) {
                 case 0:
                     try {
@@ -594,23 +596,9 @@ public class NumbConverter extends AppCompatActivity implements View.OnClickList
         }
     }
 
-
-    private boolean checkingInputValidation() {
-        String gettingInput = input.getText().toString();
-        if (input.getText().toString().trim().isEmpty()) {
-            input.setError("Field is empty");
-            return true;
-        } else if (gettingInput.matches(".*[G-Z].*") || gettingInput.matches(".*[g-z].*")) {
-            input.setError("Insert Captial Letter for A to F");
-            return true;
-        }else if (spinPosition == 2 && gettingInput.matches(".*[8-9].*")) {
-            input.setError("Value must be 0 to 7");
-            return true;
-        }else if (spinPosition == 1 && gettingInput.matches(".*[2-9].*")) {
-            input.setError("Value must be 0 or 1");
-            return true;
-        }
-        return false;
+    private boolean isEmpty() {
+        return this.input.getText().toString().isEmpty();
     }
+
 
 }

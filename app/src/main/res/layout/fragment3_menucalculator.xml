@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="8dp"
     android:background="@color/preload"
-    tools:context="com.veinat.calculated.Fragment.Fragment3_ScientificCalculator"
+    tools:context="com.veinat.calculated.Fragment.Fragment3_TrigonometryCalculator"
     tools:ignore="autofill, LabelFor, ButtonStyle, RtlCompat, HardCodedText, NestedWeights, ContentDescription">
 
 

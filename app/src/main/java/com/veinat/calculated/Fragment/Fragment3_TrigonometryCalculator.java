@@ -15,15 +15,14 @@ import android.widget.TextView;
 
 import com.veinat.calculated.R;
 
-public class Fragment3_ScientificCalculator extends Fragment implements View.OnClickListener {
+public class Fragment3_TrigonometryCalculator extends Fragment implements View.OnClickListener {
 
     private EditText input;
     private TextView result;
     private Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btndel, btnsin, btndot, btncos, btntan, btnsqrroot, btnexp, btnlog, btnsqr, btncube;
-    private Toolbar toolbar;
     private int count1 = 0;
 
-    public Fragment3_ScientificCalculator() {
+    public Fragment3_TrigonometryCalculator() {
     }
 
     @Override
